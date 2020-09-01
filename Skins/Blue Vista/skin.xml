@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<skin>
+  <info>
+    <author>Valinwolf (Based on Ki Shodar's Vista 808)</author>
+    <website>https://untouched.pictures</website>
+  </info>
+
+  <osds>
+    <volume background="OSD\back.png" mask="OSD\glass.png" defaultUnits="15">
+      <meter type="bitstrip" image="OSD\meter.png" units="15" x="14" y="16"/>
+      <iconset location="Icons\Volume"/>
+    </volume>
+    <mute background="OSD\mute.png" mask="OSD\glass.png"/>
+    <eject background="OSD\eject.png" mask="OSD\glass.png"/>
+  </osds>
+
+  <sliders>
+    <volume background="Slider\back.png" mask="Slider\glass.png">
+      <slider type="horizontal" image="Slider\knob.png"
+              x="17" y="9" width="115" height="6"/>
+    </volume>
+  </sliders>
+</skin>
