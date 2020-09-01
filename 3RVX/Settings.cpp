@@ -565,6 +565,50 @@ void Settings::SubscribeEjectEvents(bool enable) {
     SetEnabled(XML_SUBSCRIBE_EJECT, enable);
 }
 
+bool Settings::KeyboardIconEnabled() {
+    return GetEnabled(XML_KEYBOARDICON, DefaultSettings::EjectIcon);
+}
+
+void Settings::KeyboardIconEnabled(bool enable) {
+    SetEnabled(XML_KEYBOARDICON, enable);
+}
+
+bool Settings::CapsLock() {
+    return GetEnabled(
+        XML_CAPSLOCK, DefaultSettings::CapsLock);
+}
+
+void Settings::CapsLock(bool enable) {
+    SetEnabled(XML_CAPSLOCK, enable);
+}
+
+bool Settings::NumLock() {
+    return GetEnabled(
+        XML_NUMLOCK, DefaultSettings::NumLock);
+}
+
+void Settings::NumLock(bool enable) {
+    SetEnabled(XML_NUMLOCK, enable);
+}
+
+bool Settings::ScrollLock() {
+    return GetEnabled(
+        XML_SCROLLLOCK, DefaultSettings::ScrollLock);
+}
+
+void Settings::ScrollLock(bool enable) {
+    SetEnabled(XML_SCROLLLOCK, enable);
+}
+
+bool Settings::MediaKeys() {
+    return GetEnabled(
+        XML_MEDIAKEYS, DefaultSettings::MediaKeys);
+}
+
+void Settings::MediaKeys(bool enable) {
+    SetEnabled(XML_MEDIAKEYS, enable);
+}
+
 bool Settings::HasSetting(std::string elementName) {
     tinyxml2::XMLElement *el = _root->FirstChildElement(elementName.c_str());
     return (el != NULL);

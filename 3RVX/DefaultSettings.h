@@ -31,6 +31,7 @@ public:
     /* Notification Icons */
     static const bool EjectIcon = false;
     static const bool VolumeIcon = true;
+    static const bool KeyboardIcon = false;
 
     static const bool OnTop = true;
     static const bool HideFullscreen = false;
@@ -46,4 +47,8 @@ public:
     static const Settings::OSDPos OSDPosition = Settings::OSDPos::Bottom;
     static const bool AutoUpdate = false;
     static const bool MuteLock = false;
+    static const bool ScrollLock = false;
+    static const bool NumLock = false;
+    static const bool CapsLock = false;
+    static const bool MediaKeys = false;
 };

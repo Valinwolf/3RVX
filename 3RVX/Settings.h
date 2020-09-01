@@ -108,6 +108,18 @@ public:
     bool SubscribeEjectEvents();
     void SubscribeEjectEvents(bool enable);
 
+    /* Keyboard */
+    bool KeyboardIconEnabled();
+    void KeyboardIconEnabled(bool enable);
+    bool CapsLock();
+    void CapsLock(bool enable);
+    bool NumLock();
+    void NumLock(bool enable);
+    bool ScrollLock();
+    void ScrollLock(bool enable);
+    bool MediaKeys();
+    void MediaKeys(bool enable);
+
     /* Hotkeys */
     std::unordered_map<int, HotkeyInfo> Hotkeys();
     void Hotkeys(std::vector<HotkeyInfo> hotkeys);
@@ -229,4 +241,9 @@ private:
     static constexpr const char *XML_UPDATEAUTO = "automaticUpdates";
     static constexpr const char *XML_UPDATECHECKTIME = "lastUpdateCheck";
     static constexpr const char *XML_VOLUME_LIMITER = "volumeLimiter";
+    static constexpr const char* XML_KEYBOARDICON = "keyboardIcon";
+    static constexpr const char* XML_CAPSLOCK = "capsLock";
+    static constexpr const char* XML_NUMLOCK = "numLock";
+    static constexpr const char* XML_SCROLLLOCK = "scrollLock";
+    static constexpr const char* XML_MEDIAKEYS = "mediaKeys";
 };

@@ -160,6 +160,12 @@ void OSD::LoadSettings() {
 
     _ejectIcon->Checked(settings->EjectIconEnabled());
     _subscribeEjectEvents->Checked(settings->SubscribeEjectEvents());
+
+    _keyboardIcon->Checked(settings->KeyboardIconEnabled());
+    _caps->Checked(settings->CapsLock());
+    _scroll->Checked(settings->ScrollLock());
+    _num->Checked(settings->NumLock());
+    _media->Checked(settings->MediaKeys());
 }
 
 void OSD::SaveSettings() {
@@ -192,6 +198,12 @@ void OSD::SaveSettings() {
 
     settings->EjectIconEnabled(_ejectIcon->Checked());
     settings->SubscribeEjectEvents(_subscribeEjectEvents->Checked());
+
+    settings->KeyboardIconEnabled(_keyboardIcon->Checked());
+    settings->CapsLock(_caps->Checked());
+    settings->ScrollLock(_scroll->Checked());
+    settings->NumLock(_num->Checked());
+    settings->MediaKeys(_media->Checked());
 }
 
 void OSD::ShowGroup(int group) {
